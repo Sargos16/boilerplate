@@ -1,0 +1,354 @@
+---
+alwaysApply: true
+---
+
+# Cursor AI Rules for DPAY Core Project
+
+## Project Overview
+This is a React TypeScript project using Vite, Tailwind CSS, and shadcn/ui components. It's a payment gateway admin portal with merchant management, payment channels, and transaction processing features.
+
+## Commit Message Rules
+When generating commit messages, ALWAYS follow the format in .github/commit-convention.md:
+
+### Format:
+```
+[action]: [brief description with specific changes]
+
+
+### Action Prefixes (use these exactly):
+- `add:` - New features
+- `fix:` - Bug fixes
+- `improve:` - Enhancements
+- `optimize:` - Performance improvements
+- `refactor:` - Code restructuring
+- `update:` - Dependency updates
+- `remove:` - Cleanup
+- `docs:` - Documentation changes
+- `test:` - Test additions or changes
+- `style:` - Code style changes
+- `chore:` - Maintenance tasks
+
+### Guidelines:
+1. Keep title under 150 characters
+2. Include specific changes in the title
+3. Use present tense for actions
+4. Add detailed commit body when changes are complex or require explanation
+
+### TypeScript
+- Use strict TypeScript with proper typing
+- Prefer interfaces over types for object shapes
+- Use `zod` for runtime validation schemas
+- Export types from dedicated `types.tsx` files
+- Use proper generic constraints
+
+### React
+- Use functional components with hooks
+- Prefer `useState` and `useEffect` for local state
+- Use `@tanstack/react-query` for data fetching
+- Implement proper error boundaries
+- Use React Router for navigation
+- Follow React hooks rules strictly
+
+### Component Structure
+- Use shadcn/ui components as base
+- Create reusable components in `src/components/`
+- Feature-specific components in `src/features/[feature]/`
+- Use proper prop interfaces
+- Implement proper loading and error states
+
+### Styling
+- Use Tailwind CSS for styling
+- Follow the design system in `components.json`
+- Use CSS variables for theming
+- Implement responsive design
+- Use proper spacing and typography scales
+
+### State Management
+- Use Zustand for global state
+- Use React Query for server state
+- Use local state for component-specific data
+- Implement proper state persistence
+
+### API Integration
+- Use axios for HTTP requests
+- Implement proper error handling
+- Use React Query for caching and synchronization
+- Follow RESTful conventions
+- Implement proper loading states
+
+### Form Handling
+- Use `react-hook-form` with `zod` validation
+- Implement proper form validation
+- Use controlled components
+- Handle form submission properly
+- Show validation errors clearly
+
+### File Organization
+- Group related files in feature folders
+- Use index files for clean imports
+- Separate hooks, types, and components
+- Follow consistent naming conventions
+- Use proper file extensions (.tsx for React, .ts for utilities)
+
+### Import/Export
+- Use named exports for components
+- Use default exports for main components
+- Use barrel exports (index files)
+- Use absolute imports with `@/` alias
+- Group imports logically
+
+### Error Handling
+- Implement proper error boundaries
+- Use toast notifications for user feedback
+- Handle API errors gracefully
+- Provide meaningful error messages
+- Log errors appropriately
+
+### Performance
+- Use React.memo for expensive components
+- Implement proper memoization
+- Use lazy loading for routes
+- Optimize bundle size
+- Use proper key props for lists
+
+### Testing
+- Write unit tests for utilities
+- Test component behavior
+- Mock external dependencies
+- Use proper test data
+- Follow testing best practices
+
+### Security
+- Validate all user inputs
+- Sanitize data before rendering
+- Use proper authentication
+- Implement proper authorization
+- Follow security best practices
+
+## Specific Project Patterns
+
+### Modal Pattern
+- Use the modal system in `src/components/common/Modal`
+- Implement proper modal state management
+- Use `showModal` and `useModal` hooks
+- Handle modal closing properly
+
+### Query Pattern
+- Use React Query for data fetching
+- Implement proper query keys
+- Handle loading and error states
+- Use mutations for data updates
+- Invalidate queries after mutations
+
+### Form Pattern
+- Use `react-hook-form` with `zod` schemas
+- Implement proper validation
+- Handle form submission
+- Show loading states during submission
+- Provide user feedback
+
+### Component Pattern
+- Use shadcn/ui components as base
+- Implement proper prop interfaces
+- Use TypeScript for type safety
+- Follow component composition patterns
+- Implement proper accessibility
+
+## When Generating Code
+1. Always use TypeScript with proper typing
+2. Follow the established patterns in the codebase
+3. Use the existing component library
+4. Implement proper error handling
+5. Add proper loading states
+6. Follow the commit message convention
+7. Use proper naming conventions
+8. Implement responsive design
+9. Add proper accessibility attributes
+10. Follow security best practices
+
+## When Suggesting Changes
+1. Consider the existing codebase patterns
+2. Maintain consistency with current implementation
+3. Suggest improvements that align with project goals
+4. Consider performance implications
+5. Ensure backward compatibility
+6. Follow established conventions
+7. Provide clear explanations for changes
+8. Consider testing implications
+9. Maintain code quality standards
+10. Follow the commit message format
+# Cursor AI Rules for DPAY Core Project
+
+## Project Overview
+This is a React TypeScript project using Vite, Tailwind CSS, and shadcn/ui components. It's a payment gateway admin portal with merchant management, payment channels, and transaction processing features.
+
+## Commit Message Rules
+When generating commit messages, ALWAYS follow the format in .github/commit-convention.md:
+
+### Format:
+```
+[action]: [brief description with specific changes]
+
+
+### Action Prefixes (use these exactly):
+- `add:` - New features
+- `fix:` - Bug fixes
+- `improve:` - Enhancements
+- `optimize:` - Performance improvements
+- `refactor:` - Code restructuring
+- `update:` - Dependency updates
+- `remove:` - Cleanup
+- `docs:` - Documentation changes
+- `test:` - Test additions or changes
+- `style:` - Code style changes
+- `chore:` - Maintenance tasks
+
+### Guidelines:
+1. Keep title under 150 characters
+2. Include specific changes in the title
+3. Use present tense for actions
+4. Add detailed commit body when changes are complex or require explanation
+
+### TypeScript
+- Use strict TypeScript with proper typing
+- Prefer interfaces over types for object shapes
+- Use `zod` for runtime validation schemas
+- Export types from dedicated `types.tsx` files
+- Use proper generic constraints
+
+### React
+- Use functional components with hooks
+- Prefer `useState` and `useEffect` for local state
+- Use `@tanstack/react-query` for data fetching
+- Implement proper error boundaries
+- Use React Router for navigation
+- Follow React hooks rules strictly
+
+### Component Structure
+- Use shadcn/ui components as base
+- Create reusable components in `src/components/`
+- Feature-specific components in `src/features/[feature]/`
+- Use proper prop interfaces
+- Implement proper loading and error states
+
+### Styling
+- Use Tailwind CSS for styling
+- Follow the design system in `components.json`
+- Use CSS variables for theming
+- Implement responsive design
+- Use proper spacing and typography scales
+
+### State Management
+- Use Zustand for global state
+- Use React Query for server state
+- Use local state for component-specific data
+- Implement proper state persistence
+
+### API Integration
+- Use axios for HTTP requests
+- Implement proper error handling
+- Use React Query for caching and synchronization
+- Follow RESTful conventions
+- Implement proper loading states
+
+### Form Handling
+- Use `react-hook-form` with `zod` validation
+- Implement proper form validation
+- Use controlled components
+- Handle form submission properly
+- Show validation errors clearly
+
+### File Organization
+- Group related files in feature folders
+- Use index files for clean imports
+- Separate hooks, types, and components
+- Follow consistent naming conventions
+- Use proper file extensions (.tsx for React, .ts for utilities)
+
+### Import/Export
+- Use named exports for components
+- Use default exports for main components
+- Use barrel exports (index files)
+- Use absolute imports with `@/` alias
+- Group imports logically
+
+### Error Handling
+- Implement proper error boundaries
+- Use toast notifications for user feedback
+- Handle API errors gracefully
+- Provide meaningful error messages
+- Log errors appropriately
+
+### Performance
+- Use React.memo for expensive components
+- Implement proper memoization
+- Use lazy loading for routes
+- Optimize bundle size
+- Use proper key props for lists
+
+### Testing
+- Write unit tests for utilities
+- Test component behavior
+- Mock external dependencies
+- Use proper test data
+- Follow testing best practices
+
+### Security
+- Validate all user inputs
+- Sanitize data before rendering
+- Use proper authentication
+- Implement proper authorization
+- Follow security best practices
+
+## Specific Project Patterns
+
+### Modal Pattern
+- Use the modal system in `src/components/common/Modal`
+- Implement proper modal state management
+- Use `showModal` and `useModal` hooks
+- Handle modal closing properly
+
+### Query Pattern
+- Use React Query for data fetching
+- Implement proper query keys
+- Handle loading and error states
+- Use mutations for data updates
+- Invalidate queries after mutations
+
+### Form Pattern
+- Use `react-hook-form` with `zod` schemas
+- Implement proper validation
+- Handle form submission
+- Show loading states during submission
+- Provide user feedback
+
+### Component Pattern
+- Use shadcn/ui components as base
+- Implement proper prop interfaces
+- Use TypeScript for type safety
+- Follow component composition patterns
+- Implement proper accessibility
+
+## When Generating Code
+1. Always use TypeScript with proper typing
+2. Follow the established patterns in the codebase
+3. Use the existing component library
+4. Implement proper error handling
+5. Add proper loading states
+6. Follow the commit message convention
+7. Use proper naming conventions
+8. Implement responsive design
+9. Add proper accessibility attributes
+10. Follow security best practices
+
+## When Suggesting Changes
+1. Consider the existing codebase patterns
+2. Maintain consistency with current implementation
+3. Suggest improvements that align with project goals
+4. Consider performance implications
+5. Ensure backward compatibility
+6. Follow established conventions
+7. Provide clear explanations for changes
+8. Consider testing implications
+9. Maintain code quality standards
+10. Follow the commit message format
