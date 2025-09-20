@@ -52,3 +52,4 @@ export {
   useSidebar,
 } from './ui/sidebar';
 export { BreadAnchor } from './common/BreadAnchor';
+export { ModalProvider, useModal } from './common/Modal';
