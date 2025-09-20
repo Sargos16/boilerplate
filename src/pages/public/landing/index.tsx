@@ -1,8 +1,10 @@
 import { Card, CardContent } from 'components';
 import { Play } from 'lucide-react';
 import Login from 'features/auth';
+import { useGlobal } from 'context';
 
 function Landing() {
+  const { ui_version } = useGlobal();
   return (
     <div className="flex min-h-screen items-center justify-center bg-[#F0F4F8] p-6">
       <Card className="w-full max-w-md shadow-lg">
@@ -22,7 +24,7 @@ function Landing() {
           <Login />
 
           <div className="mt-8 text-center">
-            <p className="text-sm text-gray-400">App v1.0.0</p>
+            <p className="text-sm text-gray-400">App {ui_version}</p>
           </div>
         </CardContent>
       </Card>

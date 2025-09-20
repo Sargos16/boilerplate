@@ -1,1 +1,15 @@
+#!/bin/sh
+# Auto-update UI version before commit
+
+echo "🔄 Updating UI version..."
+
+# Generate new version
+npm run version
+
+# Add the generated version file to the commit
+git add src/version.ts
+
+echo "✅ UI version updated and staged for commit"
+
+# Run lint-staged
 npx lint-staged
