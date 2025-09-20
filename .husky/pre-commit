@@ -3,7 +3,6 @@
 
 echo "🔄 Updating UI version..."
 
-# Generate new version
 npm run version
 
 # Add the generated version file to the commit
