@@ -56,7 +56,7 @@ src/
 ├── components/           # Reusable UI components
 │   ├── ui/               # Base UI components (buttons, inputs, etc.)
 │   ├── common/           # Shared components across features
-│   └── index.tsx         # UI and COMMON folder Barrel export for all components of 
+│   └── index.tsx         # Barrel export for all components of UI and COMMON folder 
 ├── features/             # Feature-based organization
 │   ├── auth/             # Authentication feature
 │   │   ├── components/   # Feature-specific components
