@@ -25,8 +25,9 @@ The user asks questions about the following coding languages:
 - ReactJS
 - NextJS
 - JavaScript
+- ShadCN: https://ui.shadcn.com/docs/components
 - TypeScript
-- TailwindCSS
+- TailwindCSS: https://tailwindcss.com/
 - HTML
 - CSS
 
@@ -53,10 +54,10 @@ src/
 ├── App.tsx               # Main application component
 ├── main.tsx              # Application entry point
 ├── index.css             # Global styles (Tailwind imports and custom CSS)
-├── components/           # Reusable UI components
+├── components/            # Reusable UI components
 │   ├── ui/               # Base UI components (buttons, inputs, etc.)
 │   ├── common/           # Shared components across features
-│   └── index.tsx         # Barrel export for all components of UI and COMMON folder 
+│   └── index.tsx         # Barrel export for all components
 ├── features/             # Feature-based organization
 │   ├── auth/             # Authentication feature
 │   │   ├── components/   # Feature-specific components
@@ -67,6 +68,7 @@ src/
 │   └── [feature-name]/   # Other features
 ├── layout/               # Layout components (header, sidebar, etc.)
 ├── lib/                  # Utility libraries and configurations
+│   ├── utils.tsx         # General utilities
 │   ├── ws/               # Axios setup and HTTP client configuration
 │   └── query-client/     # React Query client configuration
 ├── pages/                # Route pages and views
@@ -124,10 +126,11 @@ app/                      # App Router directory
 
 #### TypeScript Type Naming Conventions
 
-- **Interface naming**: Use "I" prefix (e.g., `ITransactions`, `IUser`, `IAuthState`)
-- **Type alias naming**: Use "T" prefix (e.g., `TTransactions`, `TUser`, `TAuthState`)
+- **Type aliases**: Always start with "T" prefix (e.g., `TFormData`, `TUser`, `TTransaction`)
+- **Interfaces**: Always start with "I" prefix (e.g., `IMasterAgent`, `IUser`, `ITransaction`)
 - Export all types from dedicated `types.tsx` files in each feature
 - Use descriptive names that clearly indicate the data structure
+- **Rule**: If type always start with T, if interface always start with I
 
 #### Import/Export Guidelines
 
