@@ -16,17 +16,25 @@ When generating commit messages, ALWAYS follow the format in .github/commit-conv
 
 
 ### Action Prefixes (use these exactly):
-- `add:` - New features
-- `fix:` - Bug fixes
-- `improve:` - Enhancements
-- `optimize:` - Performance improvements
-- `refactor:` - Code restructuring
-- `update:` - Dependency updates
-- `remove:` - Cleanup
-- `docs:` - Documentation changes
-- `test:` - Test additions or changes
-- `style:` - Code style changes
-- `chore:` - Maintenance tasks
+- `feat:` - New features (Minor version increment)
+- `add:` - New functionality (Minor version increment)
+- `improve:` - Enhancements (Minor version increment)
+- `fix:` - Bug fixes (Patch version increment)
+- `update:` - Updates (Patch version increment)
+- `refactor:` - Code restructuring (Patch version increment)
+- `style:` - Code style changes (Patch version increment)
+- `chore:` - Maintenance tasks (Patch version increment)
+- `docs:` - Documentation changes (Patch version increment)
+- `test:` - Test additions or changes (Patch version increment)
+- `remove:` - Cleanup (Patch version increment)
+- `BREAKING CHANGE:` - Breaking changes (Major version increment)
+- `!:` - Breaking changes (Major version increment)
+
+### Version Increment Behavior:
+- **Minor increments** (`feat:`, `add:`, `improve:`): 1.0.5 → 1.1.5 (patch version preserved)
+- **Patch increments** (`fix:`, `update:`, `refactor:`, `style:`, `chore:`, `docs:`, `test:`, `remove:`): 1.0.0 → 1.0.1
+- **Major increments** (`BREAKING CHANGE:`, `!:`): 1.0.0 → 2.0.0 (resets minor and patch to 0)
+- **Default behavior**: If no recognized commit type is found, defaults to patch increment
 
 ### Guidelines:
 1. Keep title under 150 characters
@@ -191,17 +199,25 @@ When generating commit messages, ALWAYS follow the format in .github/commit-conv
 
 
 ### Action Prefixes (use these exactly):
-- `add:` - New features
-- `fix:` - Bug fixes
-- `improve:` - Enhancements
-- `optimize:` - Performance improvements
-- `refactor:` - Code restructuring
-- `update:` - Dependency updates
-- `remove:` - Cleanup
-- `docs:` - Documentation changes
-- `test:` - Test additions or changes
-- `style:` - Code style changes
-- `chore:` - Maintenance tasks
+- `feat:` - New features (Minor version increment)
+- `add:` - New functionality (Minor version increment)
+- `improve:` - Enhancements (Minor version increment)
+- `fix:` - Bug fixes (Patch version increment)
+- `update:` - Updates (Patch version increment)
+- `refactor:` - Code restructuring (Patch version increment)
+- `style:` - Code style changes (Patch version increment)
+- `chore:` - Maintenance tasks (Patch version increment)
+- `docs:` - Documentation changes (Patch version increment)
+- `test:` - Test additions or changes (Patch version increment)
+- `remove:` - Cleanup (Patch version increment)
+- `BREAKING CHANGE:` - Breaking changes (Major version increment)
+- `!:` - Breaking changes (Major version increment)
+
+### Version Increment Behavior:
+- **Minor increments** (`feat:`, `add:`, `improve:`): 1.0.5 → 1.1.5 (patch version preserved)
+- **Patch increments** (`fix:`, `update:`, `refactor:`, `style:`, `chore:`, `docs:`, `test:`, `remove:`): 1.0.0 → 1.0.1
+- **Major increments** (`BREAKING CHANGE:`, `!:`): 1.0.0 → 2.0.0 (resets minor and patch to 0)
+- **Default behavior**: If no recognized commit type is found, defaults to patch increment
 
 ### Guidelines:
 1. Keep title under 150 characters
